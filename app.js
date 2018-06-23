@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var book = require('./routes/book');
 var app = express();
 
-console.debug();
+
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
