@@ -16,8 +16,12 @@
           <input type="text" class="form-control" [(ngModel)]="book.author" name="author" required>
         </div>
         <div class="form-group">
+          <label for="name">Description</label>
+          <input type="text" class="form-control" [(ngModel)]="book.description" name="description" required>
+        </div>
+        <div class="form-group">
           <label for="name">Published Year</label>
-          <input type="number" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
+          <input type="number" class="form-control" [(ngModel)]="book.publishedYear" name="publishedYear" required>
         </div>
         <div class="form-group">
           <label for="name">Publisher</label>

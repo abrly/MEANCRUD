@@ -27,6 +27,7 @@ export class BookEditComponent implements OnInit {
 
       (res) => {
 
+
         this.book = res;
 
       }
@@ -36,11 +37,17 @@ export class BookEditComponent implements OnInit {
   }
 
 
-  updateBook(id, data) {
-    this.http.put('/book/' + id, data)
+  updateBook(id) {
+
+   // console.log('update book id : ' + id );
+   // console.log('update data : ' +  this.book);
+
+    this.http.put('/book/' + id, this.book)
       .subscribe(res => {
+
          id = res['_id'];
-          this.router.navigate(['/book-details', id]);
+         this.router.navigate(['/book-details', id]);
+       // console.log('PUT success .+ ' + res['_id'] );
         }, (err) => {
           console.log(err);
         }
