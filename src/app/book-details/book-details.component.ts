@@ -2,6 +2,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute , Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
+//import { book } from '../../../models/book.js';
+
 @Component({
   selector: 'app-book-details',
   templateUrl: './book-details.component.html',
